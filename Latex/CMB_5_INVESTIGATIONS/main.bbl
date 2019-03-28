@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{adams1991complementary}
+M.~D. Adams, J.~M. Kelley, J.~D. Gocayne, M.~Dubnick, M.~H. Polymeropoulos,
+  H.~Xiao, C.~R. Merril, A.~Wu, B.~Olde, R.~F. Moreno, et~al.
+\newblock Complementary dna sequencing: expressed sequence tags and human
+  genome project.
+\newblock {\em Science}, 252(5013):1651--1656, 1991.
+
+\bibitem{altschul1990basic}
+S.~F. Altschul, W.~Gish, W.~Miller, E.~W. Myers, and D.~J. Lipman.
+\newblock Basic local alignment search tool.
+\newblock {\em Journal of molecular biology}, 215(3):403--410, 1990.
+
+\bibitem{d200920}
+D.~D'Elia, A.~Gisel, N.-E. Eriksson, S.~Kossida, K.~Mattila, L.~Klucar, and
+  E.~Bongcam-Rudloff.
+\newblock The 20 th anniversary of embnet: 20 years of bioinformatics for the
+  life sciences community, 2009.
+
+\bibitem{lipman1985rapid}
+D.~J. Lipman and W.~R. Pearson.
+\newblock Rapid and sensitive protein similarity searches.
+\newblock {\em Science}, 227(4693):1435--1441, 1985.
+
+\bibitem{wiki_1}
+Wikipedia.
+\newblock Marcador de secuencia expresada --- wikipedia{,} la enciclopedia
+  libre, 2017.
+\newblock [Internet; descargado 15-marzo-2019].
+
+\end{thebibliography}

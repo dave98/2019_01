@@ -1,0 +1,4 @@
+D:\Dave\code\2019_01\CMB_SequenceEqual\main.cpp: In function 'int main()':
+D:\Dave\code\2019_01\CMB_SequenceEqual\main.cpp:26:3: error: 'thread' is not a member of 'std'
+   std::thread a;
+   ^~~
