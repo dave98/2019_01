@@ -1,0 +1,188 @@
+In file included from D:\Dave\code\2019_01\P_Neuronal_Network\src/doublefann.c:26:0,
+                 from D:\Dave\code\2019_01\P_Neuronal_Network\main.cpp:3:
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:214:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+   fprintf(conf, "bit_fail_limit="FANNPRINTF"\n", ann->bit_fail_limit);
+                 ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:215:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+   fprintf(conf, "cascade_candidate_limit="FANNPRINTF"\n", ann->cascade_candidate_limit);
+                 ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:216:17: warning: invalid suffix on literal; C++11 requires a space between literal and string macro [-Wliteral-suffix]
+   fprintf(conf, "cascade_weight_multiplier="FANNPRINTF"\n", ann->cascade_weight_multiplier);
+                 ^
+In file included from D:\Dave\code\2019_01\P_Neuronal_Network\src/doublefann.c:26:0,
+                 from D:\Dave\code\2019_01\P_Neuronal_Network\main.cpp:3:
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c: In function 'fann* fann_create_from_fd(FILE*, const char*)':
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [13]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:433:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "num_layers", &num_layers);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [16]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:441:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "learning_rate", &ann->learning_rate);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [18]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:442:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "connection_rate", &ann->connection_rate);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [15]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:443:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "network_type", &tmpVal);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [20]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:445:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "learning_momentum", &ann->learning_momentum);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [21]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:446:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "training_algorithm", &tmpVal);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [23]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:448:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "train_error_function", &tmpVal);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [22]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:450:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "train_stop_function", &tmpVal);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [33]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:452:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "cascade_output_change_fraction", &ann->cascade_output_change_fraction);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [18]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:453:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "quickprop_decay", &ann->quickprop_decay);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [15]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:454:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "quickprop_mu", &ann->quickprop_mu);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [24]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:455:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "rprop_increase_factor", &ann->rprop_increase_factor);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [24]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:456:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "rprop_decrease_factor", &ann->rprop_decrease_factor);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [18]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:457:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "rprop_delta_min", &ann->rprop_delta_min);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [18]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:458:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "rprop_delta_max", &ann->rprop_delta_max);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [19]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:459:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "rprop_delta_zero", &ann->rprop_delta_zero);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [35]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:460:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_output_stagnation_epochs", &ann->cascade_output_stagnation_epochs);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [36]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:461:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%f", "cascade_candidate_change_fraction", &ann->cascade_candidate_change_fraction);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [38]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:462:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_candidate_stagnation_epochs", &ann->cascade_candidate_stagnation_epochs);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [25]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:463:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_max_out_epochs", &ann->cascade_max_out_epochs);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [25]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:464:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_min_out_epochs", &ann->cascade_min_out_epochs);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [26]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:465:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_max_cand_epochs", &ann->cascade_max_cand_epochs);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [26]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:466:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_min_cand_epochs", &ann->cascade_min_cand_epochs);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [31]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:467:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_num_candidate_groups", &ann->cascade_num_candidate_groups);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [17]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:469:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf(FANNSCANF, "bit_fail_limit", &ann->bit_fail_limit);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [26]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:470:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf(FANNSCANF, "cascade_candidate_limit", &ann->cascade_candidate_limit);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [28]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:471:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf(FANNSCANF, "cascade_weight_multiplier", &ann->cascade_weight_multiplier);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [37]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:474:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_activation_functions_count", &ann->cascade_activation_functions_count);
+  ^~~~~~~~~~
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:346:29: error: unable to find string literal operator 'operator""type' with 'const char [39]', 'unsigned int' arguments
+  if(fscanf(conf, name"="type"\n", val) != 1) \
+                             ^
+D:\Dave\code\2019_01\P_Neuronal_Network\src/fann_io.c:499:2: note: in expansion of macro 'fann_scanf'
+  fann_scanf("%u", "cascade_activation_steepnesses_count", &ann->cascade_activation_steepnesses_count);
+  ^~~~~~~~~~

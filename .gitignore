@@ -265,3 +265,7 @@ __pycache__/
 #for me
 .exe
 .gch
+.png
+.png.import
+.wav
+.wav.import

@@ -1,0 +1,16 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+The style file: abbrv.bst
+Database file #1: biblio.bib
+Repeated entry---line 254 of file biblio.bib
+ : @inproceedings{thue2007interactive
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 262 of file biblio.bib
+ : @inproceedings{barber2007user
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 298 of file biblio.bib
+ : @article{el2007interaction
+ :                           ,
+I'm skipping whatever remains of this entry
+(There were 3 error messages)

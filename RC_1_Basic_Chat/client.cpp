@@ -19,7 +19,7 @@ using namespace std;
 
 int main(){
   int port = 4000;
-  char msg[1024];
+  char msg[1024]; 
 
   struct hostent* host = gethostbyname("127.0.0.1");
   sockaddr_in client_Adress;

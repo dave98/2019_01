@@ -1,0 +1,134 @@
+--> CINCO CRITERIOS:
+  Openess: (+O / -O)
+    +O
+      Explora el ambiente
+      Colecciona una buena cantidad de items
+    -O
+      Explora lo necesario, no preocupa por encontrar lugares ocultos
+      No recolecta items.
+
+  Conscientiousness: (+C / -C)
+    +C
+      Dificilmente es tocado por los enemigos.
+      Acierta buena parte de sus disparos.
+    -C
+      Constantemente es atacado por el enemigo.
+      No acierta la mayoria de sus disparos.
+
+  Extraversion: (+E / -E)
+    WILL NOT BE UTILIZED
+
+  Agreeableness: (+A / -A)
+    WILL NOT BE UTILIZED
+
+  Neurocitism: (+N / -N)
+    +N
+      Trata de matar a la mayoria de sus enemigos.
+      Hace muchos movimientos desordenaods.
+    -N
+      Mata a los enemigos necesarios. Si puede los evita.
+      Hace los movimientos necesarios
+
+
+//Todos estos valores están entre 0 5
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+
+
+              #1 Porcentaje del tiempo parado sin hacer nada. (N) (-N 1, +N 0)
+                - Se obtiene en cada ventana de tiempo.
+                - Entre (0 y 1)
+
+#2 Porcentaje del tiempo corriendo (N) (-N  0, +N 1)
+  --> FUSION: A mas tiempo corriendo, mas neurotico eres.
+  - Se obtiene en cada ventana de tiempo.
+  - Entre (0 y 1)
+  - Complementario al anterior
+
+#3 Numero de areas exploradas ocultas. (O) (-O 1, +O 5)
+  - Numero de areas ocultas descubiertas en un lapso de ventana
+  - De (0 a 5)
+
+#4 Total de disparos hechos por el jugador. (N) (-N 0, +N 1)
+  - Numero de disparos hechos en una ventana de tiempo
+  - Relacion entre el time windows y el numero de disparos numero de disparos/time windows
+  - Entre 0 a +1
+
+#5 Porcentaje de disparos acertados. (C) (-C 0, +C 1)
+  - Del total disparos, cuantos acertaron en el enemigo
+  - Entre 0 y 1
+
+    #6 Porcentaje de disparos fallidos. (C) (-C 1, +C 0)
+      - Del total de disparos, cuantos no acertaron en el enemigo
+      - Entre 0 y 1 (LA SUMA DE ESTE CON EL ANTERIOR EQUIVALE A 1)
+
+#7 Total de golpes dados por el jugador. (N) (-N 0, +N 1)
+  - Ataques cuerpo a cuerpo
+  - Relacion entre el time windows y el numero de golpes. Num Golpes/ Time windows
+
+#8 Porcentaje de golpes acertados. (C) (-C 0, +C 1)
+  - Equivalente a 6
+
+    #9 Porcentaje de golpes fallidos. (C) (-C 1, +C 0)
+      - Equivalente a 7
+
+#10 Pocentaje de enemigos muertos. (N) (-N 0, +N 1)
+  - Se toma la cantidad de enemigos al inicio de cada windows. Después al finalizar la ventana se obtiene
+    el porcentaje de muertes. Entre 0-1
+
+#11 Tiempo entre rafagas de golpes. (N) (-N 1, +N 0)
+  - Tiempo discurrido entre la ultima rafaga de golpes y la actual.
+  - Pueden considerarse ventanas de tiempo sin ataque. Con resultados de uno
+  - Pueden considerarse ventanas de tiempo de puro ataque. Con resultados de 0
+  -
+  - Entre 0 - 1
+
+
+#12 Tiempo entre rafagas de disparos. (N) (-N 1 , +N 0)
+  - Equivalente a uno
+
+#13 Distancia promedio en el lapso T de los enemigos muertos. (C) (-C 0, +C 1)
+  - Distancia promedio sacada tras analizar todas las muertes producidas en un lapso de tiempo.
+  - Se obtiene en el instante en el que el enemigo muere.
+  - Si no se ha producido ninguna muerte, entonces la distancia promedio es la maxima posible.
+  - La distancia promedio se promedia en relación al ancho de la ventana.
+  - Entre 0 y 1 (o mayor)
+
+#14 Tiempo promedio entre ver a un enemigo y su muerte. Tiempo que un enemigo esta vivo (N) (-N 1, +N 0)
+  - Tiempo promedio que vive un enemigo, desde que se activo cualquiera de sus patrones de comportamiento.
+  - Se realiza un promedio entre el tiempo de todos los enemigos que MURIERON.
+  - Sin embargo el contador inicia para cada enemigo desde que se inicia su comportamiento de ataque
+  - Posteriormente el promedio se relacion con el time windows para obtener valores entre (0 5) (* time windows)
+
+
+#15 Porcentaje de curas recogidas. (O) (-O 0, +O 1)
+  - En cada time windows, se inicia la variable que cuenta el numero de curas dispuestas en el mundo.
+  - Las curas desaparecen tras un minuto (esto para no apresurar al jugador)
+  - Solo se cuentan las curas recogidas por el jugador
+  - Al finalizar el time windows se porcentúa en relación al numero de curas recogidas
+  - Entre [0 - 1]
+
+#16 Tiempo de vida de las curas. ->Las curas han de tener un tiempo maximo de vida (C) (-C 1, +C 0)
+  - Equivalente a #14 pero con curas.
+  - Solo trabaja con las curas recogidas.
+
+#17 Porcentaje de municiones recogidas. (O) (-O 0, +O 1)
+  - Equivalente a #15
+
+#18 Tiempo de vida de las municiones. (C) (-C 1, +C 0)
+  - Equivalente a #16
+
+#19 Total de daño recibido (C) (-C 1, +C 0)
+  - Se inicia con la variable de inicio en cero.
+  - Se cuenta toda la vida perdida por golpes de enemigos (De momentos vida perdida en general)
+  - Posteriormente se porcentúa en relación a la vida maxima del porcentaje.
+  - Entre 0 5 o más pues la vida puede irse recuperando
+
+#20 Numero de cambios de direcciones (N) (-N 0, +N 1)
+  - Numero de cambios de direccion que el juugador ha recibido
+  - Relación entre el time windows y el cambio de direccion hechos durante este.
+  - Numero de cambio - time windows.
+  - Entre 0 y 5

@@ -1,0 +1,14 @@
+INSTRUCCIONES
+
+# Usar 'w' para arriba
+       's' para abajo
+       'a' para izquierda
+       'd' para derecha
+
+#Bajo la matriz en el cliente colocar dichas direcciones y presionar enter.
+#El servidor no necesita configuracion alguna.
+#El cliente require de un nick y un avatar.
+
+#Compilar cliente y por separado servidor:
+  Para cliente: g++ -std=c++11 client.cpp -o cli.exe
+  Para servidor: g++ -std=c++11 server.cpp -o ser.exe
